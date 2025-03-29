@@ -1,0 +1,46 @@
+local bm = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Cutsomers/refs/heads/main/CuathangTom.lua'))()
+local LIB = bm:Window(
+    "TomH Hub", 
+    "https://discord.gg/tomhoang", --Desc
+    Enum.KeyCode.RightControl -- KeyCode-Toggle
+)
+Config = {
+    Logo = "rbxassetid://77096411059375",
+    TabColor = Color3.fromRGB(15, 15, 15),
+    StrokeColor = Color3.fromRGB(23, 23, 23),
+    Other = Color3.fromRGB(2, 182, 255),
+    SizeLib = UDim2.new(0, 550, 0, 330)
+}
+local dm = LIB:Tab("Hoping", "TomH Hub", "rbxassetid://111112545689883") -- Name/Des/LogoID
+local dd = LIB:Tab("Settings", "TomH Hub", "rbxassetid://133796011846199")
+
+dm:Line()
+dm:Label("Test")
+local NAME = {"Method 1", "Method 2", "Method 3"}
+dm:Dropdown("Select Method Farm", NAME, function(value) 
+    if value == "Method 1" then
+
+    elseif value == "Method 2" then
+        
+    end
+end)
+
+dm:Slider("wait update ", 
+1, 80, 30, function(value) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+dm:Toggle("Auto Rip", "đang lỗi ", "", false, function() 
+    
+end)
+dm:Toggle("Hop DrakBeard", "Auto Find Drak Beard ", "", false, function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomhoang2k/Hopbosstest/refs/heads/main/Drakbeard"))()
+end)
+dm:Toggle("Hop Dough King", "Auto Find DoughKing", "", false, function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomhoang2k/Hopbosstest/refs/heads/main/Dough"))()
+end)
+dm:Toggle("Hop Mirage", "Auto Find Mirage", "", false, function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomhoang2k/Hopbosstest/refs/heads/main/Mirage"))()
+end)
+dm:Button("Eclipes Community", "gg.tomhoang", function()
+    print("")
+end)
