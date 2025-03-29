@@ -15,7 +15,7 @@ local dm = LIB:Tab("Hoping", "TomH Hub", "rbxassetid://111112545689883") -- Name
 local dd = LIB:Tab("Settings", "TomH Hub", "rbxassetid://133796011846199")
 
 dm:Line()
-dm:Label("Test")
+dm:Label("Wait Update")
 local NAME = {"Method 1", "Method 2", "Method 3"}
 dm:Dropdown("Select Method Farm", NAME, function(value) 
     if value == "Method 1" then
