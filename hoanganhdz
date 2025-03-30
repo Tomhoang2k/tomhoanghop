@@ -29,8 +29,8 @@ dm:Slider("wait update ",
 1, 80, 30, function(value) 
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
-dm:Toggle("Auto Rip", "đang lỗi ", "", false, function() 
-    
+dm:Toggle("Auto Rip", "Auto Find Rip_indra ", "", false, function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomhoang2k/Hopbosstest/refs/heads/main/Rip"))()
 end)
 dm:Toggle("Hop DrakBeard", "Auto Find Drak Beard ", "", false, function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomhoang2k/Hopbosstest/refs/heads/main/Drakbeard"))()
